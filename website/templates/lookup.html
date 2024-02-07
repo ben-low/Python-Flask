@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %}Lookup{% endblock %} {% block content
+%}
+<br>
+<h1 align="center">Enter User ID</h1>
+<br>
+<form method="POST">
+    <textarea name="userId" id="userId" class="form-control"></textarea>
+    <br />
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
+<h3>Notes for User ID = {{userId|safe}}</h3><br />
+{% for row in rows %}
+<tr>
+    <td>{{row|safe}}</td>
+    <n>
+</tr>
+<br />
+{% endfor %}
+{% endblock %}

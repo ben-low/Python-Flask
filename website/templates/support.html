@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block title %}Support{% endblock %} {% block content
+%}
+<br>
+<h1 align="center">Submit a Support Ticket</h1>
+<br>
+<form method="POST">
+    <textarea name="ticket" id="ticket" class="form-control"></textarea>
+    <br />
+    <div align="center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+{% endblock %}
